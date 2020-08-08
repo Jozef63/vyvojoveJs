@@ -11,66 +11,99 @@
             <h1 style="display: inline; width: 100%; "><b>Doklad o vykonan&iacute; pr&aacute;ce</b></h1>
             
         
+            <p>&Ccaron;&iacute;slo objedn&aacute;vky: $$cislo_objednavky$$<br></br></p>
+            <div style=" float: left; display: inline; width: 50%; margin-bottom: 10px;">
+                <h3 style="display: inline; margin-bottom: 10px; width: 50%; "><b>Inform&aacute;cie o vozidle</b></h3>
+            </div>
+            <div style="float: right; display: inline; width: 50%; margin-bottom: 10px;">
+                <h3 style="display: inline; margin-bottom: 10px; "><b>Inform&aacute;cie o z&aacute;kazn&iacute;kovi</b></h3>
+            </div>
+            
+            <div>
+                <table
+                    style="float: left; width: 45%; max-width: auto;;border-collapse: collapse; background-color: #D1D1D1; margin: 5px; border: 1px solid grey; margin-bottom: 20px;">
+                    <tr style="border-bottom: 1px solid grey; padding: 0px 2px;">
+                        <td style="padding: 4px;"><b>Zna&#269;ka vozidla:</b></td>
+                        <td style="padding: 4px;">$$znacka$$</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid grey;">
+                        <td style="padding: 4px;"><b>&#352;PZ/E&#268;V:</b></td>
+                        <td style="padding: 4px;">$$spz$$</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid grey;">
+                        <td style="padding: 4px;"><b>VIN:</b></td>
+                        <td style="padding: 4px;">$$vin$$</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid grey;">
+                        <td style="padding: 4px;"><b>Najazden&eacute; kilometre:</b></td>
+                        <td style="padding: 4px;">$$km$$ km</td>
+                    </tr>
+                </table>
+                <table
+                    style="float: right; width: 45%; max-width: auto;;border-collapse: collapse; background-color: #D1D1D1; margin: 5px; border: 1px solid grey; margin-bottom: 20px;">
+                    <tr style="border-bottom: 1px solid grey; padding: 0px 2px;">
+                        <td style="padding: 4px;"><b>Meno:</b></td>
+                        <td style="padding: 4px;">$$menoZakaznika$$</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid grey;">
+                        <td style="padding: 4px;"><b>Adresa:</b></td>
+                        <td style="padding: 4px;">$$adresaZakaznika$$</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid grey;">
+                        <td style="padding: 4px;"><b>I&Ccaron;O:</b></td>
+                        <td style="padding: 4px;">$$ICOZakaznika$$</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid grey;">
+                        <td style="padding: 4px;"><b>I&Ccaron;O s DPH:</b></td>
+                        <td style="padding: 4px;">$$ICODphZakaznika$$ km</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid grey;">
+                        <td style="padding: 4px;"><b>DI&Ccaron;:</b></td>
+                        <td style="padding: 4px;">$$DICZakaznika$$ km</td>
+                    </tr>
+                </table>
+            </div>
+
             <p><br></br></p>
-        
-            <h3 style="display: inline; margin-bottom: 10px; "><b>Inform&aacute;cie o vozidle</b></h3>
-        
-            <table
-                style="width: 450px; max-width: auto;;border-collapse: collapse; background-color: #D1D1D1; margin: 5px; border: 1px solid grey; margin-bottom: 20px;">
-                <tr style="border-bottom: 1px solid grey; padding: 0px 2px;">
-                    <td style="padding: 4px;"><b>Zna&#269;ka vozidla:</b></td>
-                    <td style="padding: 4px;">$$znacka$$</td>
-                </tr>
-                <tr style="border-bottom: 1px solid grey;">
-                    <td style="padding: 4px;"><b>&#352;PZ/E&#268;V:</b></td>
-                    <td style="padding: 4px;">$$spz$$</td>
-                </tr>
-                <tr style="border-bottom: 1px solid grey;">
-                    <td style="padding: 4px;"><b>VIN:</b></td>
-                    <td style="padding: 4px;">$$vin$$</td>
-                </tr>
-                <tr style="border-bottom: 1px solid grey;">
-                    <td style="padding: 4px;"><b>Najazden&eacute; kilometre:</b></td>
-                    <td style="padding: 4px;">$$km$$ km</td>
-                </tr>
-            </table>
-        
-            <h3 style="display: inline;"><b>Použitý materi&aacute;l</b></h3>
-        
-            <table style="max-width: auto;border-collapse: collapse;; margin: 5px; border: 2px solid black; margin-bottom: 20px;">
-                <tr style="border-bottom: 2px solid black; padding: 0px 2px;">
-                    <td style="padding: 4px; text-align: center; border: 1px solid black;"><b>N&aacute;zov materi&aacute;lu</b></td>
-                    <td style="padding: 4px; text-align: center; border: 1px solid black;"><b>Množstvo</b></td>
-                    <td style="padding: 4px; text-align: center; border: 1px solid black;"><b>Cena za kus v &#x20AC; bez DPH</b>
-                    </td>
-                    <td style="padding: 4px; text-align: center; border: 1px solid black;"><b>Cena za kus v &#x20AC; s DPH</b>
-                    </td>
-                </tr>
-                <tr style="border-bottom: 1px solid black;">
-                    <td style="padding: 4px; border: 1px solid black;"><b>$$nazov_materialu$$</b></td>
-                    <td style="padding: 4px; text-align: center; border: 1px solid black;">$$mnozstvo$$</td>
-                    <td style="padding: 4px; text-align: center; border: 1px solid black;">$$jednotkova_cena$$</td>
-                    <td style="padding: 4px; text-align: center; border: 1px solid black;">$$jednotkova_cenaDPH$$</td>
-                </tr>
-                <tr>
-                    <td style="padding: 4px;text-align: left;"><b>Spolu:</b></td>
-                    <td></td>
-                    <td></td>
-                    <td style="padding: 4px; text-align: center; border: 1px solid black;"><b>120</b></td>
-                </tr>
-            </table>
+
+            <div style=" margin-top: 170px;">
+                <h3 style="display: inline;"><b>Použitý materi&aacute;l</b></h3>
+                
+                <table style="max-width: auto;border-collapse: collapse;; margin: 5px; border: 2px solid black; margin-bottom: 20px;">
+                    <tr style="border-bottom: 2px solid black; padding: 0px 2px;">
+                        <td style="padding: 4px; text-align: center; border: 1px solid black;"><b>N&aacute;zov materi&aacute;lu</b></td>
+                        <td style="padding: 4px; text-align: center; border: 1px solid black;"><b>Množstvo</b></td>
+                        <td style="padding: 4px; text-align: center; border: 1px solid black;"><b>Cena za kus v &#x20AC; bez DPH</b>
+                        </td>
+                        <td style="padding: 4px; text-align: center; border: 1px solid black;"><b>Cena za kus v &#x20AC; s DPH</b>
+                        </td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid black;">
+                        <td style="padding: 4px; border: 1px solid black;"><b>$$nazov_materialu$$</b></td>
+                        <td style="padding: 4px; text-align: center; border: 1px solid black;">$$mnozstvo$$</td>
+                        <td style="padding: 4px; text-align: center; border: 1px solid black;">$$jednotkova_cena$$</td>
+                        <td style="padding: 4px; text-align: center; border: 1px solid black;">$$jednotkova_cenaDPH$$</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 4px;text-align: left;"><b>Spolu:</b></td>
+                        <td></td>
+                        <td></td>
+                        <td style="padding: 4px; text-align: center; border: 1px solid black;"><b>$$spolu_cena_materialu$$</b></td>
+                    </tr>
+                </table>
+            </div>
+            
         
             <h3 style="display: inline;"><b>Popis pr&aacute;ce</b></h3>
         
             <table style="max-width: 21cm;border-collapse: collapse;word-wrap: break-word; margin: 0px 10px 0px 10px; margin-bottom: 20px;">
                 <tr style="max-width: 21cm; background-color: #D1D1D1; padding: 0px 2px;word-wrap: break-word;">
                     <td style="padding: 4px; max-width: 21cm; width: 21cm; word-wrap: break-word; text-align: left;">
-                        blablablablablablablablabla blablablablablablablablablablab
-                        lablablablablablablablablablablablablablablablabla
+                        $$popis_prace$$
                     </td>
                 </tr>
                 <tr style="padding: 0px 2px;">
-                    <td style="padding: 4px; text-align: right;"><b>680&#x20AC;</b></td>
+                    <td style="padding: 4px; text-align: right;"><b>$$spolu_cena_prace$$&#x20AC;</b></td>
                 </tr>
             </table>
 
@@ -80,12 +113,12 @@
                 <div>
                     <p style="text-align: center; width: 50%; margin: 0px; display: inline; float: left;">
                         ..............................................................</p>
-                    <h4 style="text-align: right; display: inline; float: right;margin: 0px;">Spolu bez DPH: 800&#x20AC;</h4>
+                    <h4 style="text-align: right; display: inline; float: right;margin: 0px;">Spolu bez DPH: $$spolu_cena_bez_dph$$&#x20AC;</h4>
                 </div>
                 
                 <div>
                     <p style="text-align: center; width: 50%; display: inline; float: left;">Podpis</p>
-                    <h3 style="text-align: right; display: inline; float: right;margin: 0px;">Spolu s DPH: 1000&#x20AC;</h3>
+                    <h3 style="text-align: right; display: inline; float: right;margin: 0px;">Spolu s DPH: $$spolu_cena_s_dph$$&#x20AC;</h3>
                 </div>
                 
             </div>
